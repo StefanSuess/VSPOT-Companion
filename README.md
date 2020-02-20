@@ -1,7 +1,7 @@
 # VSPOT-Companion
 
 <div align="center">
-<img src="https://github.com/StefanSuess/VSPOT-AndroidApp/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" width="300" height="300">
+<img src="https://raw.githubusercontent.com/Sixl-Daniel/FST-Projekt-VSPOT/master/public/media/branding/logo.png" width="300" height="300">
 <h1>VSPOT<br>Digital Signage Solution</h1>
 <p>
   
