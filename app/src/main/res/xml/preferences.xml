@@ -69,7 +69,7 @@
         <Preference
 
             android:icon="@drawable/domain"
-            app:title="Copyright © 2020 by DreckigerDan GmbH" />
+            app:title="Made by Stefan Süß" />
     </PreferenceCategory>
 
 </PreferenceScreen>
