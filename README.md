@@ -21,4 +21,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 * Project partner and "frontend god": Daniel Sixl https://github.com/Sixl-Daniel
-* Accompanying web app for the android app: https://github.com/Sixl-Daniel/FST-Projekt-VSPOT
+* Accompanying web app for the client app: https://github.com/Sixl-Daniel/FST-Projekt-VSPOT
+* Accompanying client app: https://github.com/StefanSuess/VSPOT-AndroidApp
