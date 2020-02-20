@@ -8,6 +8,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 </p>
+<p>This helps you to find, configure and troubleshoot your physical VSPOT device.</p>
 <p>VSPOT is a graduation project (State-Certified Engineer CS).</p>
 </div>
 
