@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "292463444554",
+    "firebase_url": "https://vspotcompanion.firebaseio.com",
+    "project_id": "vspotcompanion",
+    "storage_bucket": "vspotcompanion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292463444554:android:99bc195e8e265a4d93dcb3",
+        "android_client_info": {
+          "package_name": "com.example.vspotconfig"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292463444554-frqadat47l6ep35rhc2pu7kbie5f8bnk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vspotconfig",
+            "certificate_hash": "39c6ef0cec97570925b33fee7c688e40d67031db"
+          }
+        },
+        {
+          "client_id": "292463444554-jj6rdqsnnjfgh43fkihrinr8bhl8gchi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB19d_L3RwqDIgdM7eEcs0arDbzaY075T4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292463444554-jj6rdqsnnjfgh43fkihrinr8bhl8gchi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

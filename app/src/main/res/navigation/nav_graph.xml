@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.vspotconfig.FirstFragment"
+        android:label="Device Finder"
+        tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.vspotconfig.SecondFragment"
+        android:label="Device Info"
+        tools:layout="@layout/fragment_second">
+
+        <argument
+            android:name="IP"
+            android:defaultValue="-"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="MAC"
+            android:defaultValue="-"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="HostNAme"
+            android:defaultValue="-"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_SecondFragment_to_SSHFragment"
+            app:destination="@id/SSHFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_factoryResetFragment"
+            app:destination="@id/factoryResetFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_SSHFragment2"
+            app:destination="@id/SSHFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Settings"
+        android:name="com.example.vspotconfig.MySettingsFragment"
+        android:label="Settings" />
+    <action
+        android:id="@+id/action_global_mySettingsFragment"
+        app:destination="@id/Settings" />
+    <fragment
+        android:id="@+id/SSHFragment"
+        android:name="com.example.vspotconfig.SSHFragment"
+        android:label="SSH Console">
+        <argument
+            android:name="IP"
+            app:argType="string" />
+        <argument
+            android:name="user"
+            app:argType="string" />
+        <argument
+            android:name="password"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="showlogs"
+            app:argType="boolean"
+            app:nullable="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/factoryResetFragment"
+        android:name="com.example.vspotconfig.FactoryResetFragment"
+        android:label="Factory Reset Assistant">
+        <argument
+            android:name="IP"
+            app:argType="string" />
+        <argument
+            android:name="User"
+            app:argType="string" />
+        <argument
+            android:name="Password"
+            app:argType="string" />
+    </fragment>
+</navigation>

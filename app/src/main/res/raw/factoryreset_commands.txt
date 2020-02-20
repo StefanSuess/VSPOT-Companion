@@ -1,0 +1,30 @@
+=> Performing sanity check
+hostname
+=> Installing x-server
+sudo apt-get install --no-install-recommends xserver-xorg x11-xserver-utils xinit openbox -y
+=> Installing chromium
+sudo apt-get install --no-install-recommends chromium-browser -y
+=> Configuring chromium (1/10)
+echo '# Disable any form of screen saver \/ screen blanking \/ power management' | sudo tee /etc/xdg/openbox/autostart
+=> Configuring chromium (2/10)
+echo 'xset s off' | sudo tee -a /etc/xdg/openbox/autostart
+=> Configuring chromium (3/10)
+echo 'xset s noblank' | sudo tee -a /etc/xdg/openbox/autostart
+=> Configuring chromium (4/10)
+echo 'xset -dpms\\n' | sudo tee -a /etc/xdg/openbox/autostart
+=> Configuring chromium (5/10)
+echo '# Allow quitting the X server with CTRL-ATL-Backspace' | sudo tee -a /etc/xdg/openbox/autostart
+=> Configuring chromium (6/10)
+echo 'setxkbmap -option terminate:ctrl_alt_bksp\\n' | sudo tee -a /etc/xdg/openbox/autostart
+=> Configuring chromium (7/10)
+echo '# Start Chromium in kiosk mode' | sudo tee -a /etc/xdg/openbox/autostart
+=> Configuring chromium (8/10)
+echo 'sed -i \x27s\/\"exited_cleanly\":false\/\"exited_cleanly\":true\/\x27 ~\/.config\/chromium\/\x27Local State\x27' | sudo tee -a /etc/xdg/openbox/autostart
+=> Configuring chromium (9/10)
+echo 'sed -i \x27s\/\"exited_cleanly\":false\/\"exited_cleanly\":true\/\; s\/\"exit_type\":\"\[^\"\]\\+\"\/\"exit_type\":\"Normal\"\/\x27 ~\/.config\/chromium\/Default\/Preferences' | sudo tee -a /etc/xdg/openbox/autostart
+=> Configuring chromium (10/10)
+echo 'chromium-browser --incognito --disable-features=TranslateUI --disable-features=InfiniteSessionRestore --noerrdialogs --disable-infobars --kiosk --app=https://vspot.eu/web/v1/2/5?api_token=kQy24i57RTEvlOIHLVXCr0h19i503VPY6849O1pJwBSKv' | sudo tee -a /etc/xdg/openbox/autostart
+=> Configuring startup
+echo '[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && startx -- -nocursor' | sudo tee ~.bash_profile
+Factory reset finished successfully, rebooting device now
+sudo reboot now

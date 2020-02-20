@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="Scanning"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:key="keepscreenon"
+            app:summary="Keeps the device screen on (requires app restart)"
+            app:title="Keep Screen on" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:key="heartbeat"
+            app:summary="Show in Device Info at the top right corner if device is online/offline"
+            app:title="Enable Heartbeat" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:iconSpaceReserved="false"
+            app:key="portscanning"
+            app:summary="Enable portscanning in Device Info (may impact performance)"
+            app:title="Enable portscanning" />
+
+        <DropDownPreference
+            android:entryValues="@array/listvalues"
+            app:defaultValue="Fast"
+            app:entries="@array/listentries"
+            app:iconSpaceReserved="false"
+            app:key="scanningspeed"
+            app:title="Change scanning speed in Device Finder"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="Connections">
+        <EditTextPreference
+            android:defaultValue="22"
+            android:inputType="number"
+            app:iconSpaceReserved="false"
+            app:key="sshport"
+            app:title="Set SSH port"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:defaultValue="5900"
+            android:inputType="number"
+            app:iconSpaceReserved="false"
+            app:key="vncport"
+            app:title="Set VNC port"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="About">
+        <Preference
+            android:icon="@drawable/info"
+            android:summary="@string/versionName"
+            app:iconSpaceReserved="false"
+            app:title="Version" />
+        <Preference
+
+            android:icon="@drawable/domain"
+            app:title="Copyright © 2020 by DreckigerDan GmbH" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
