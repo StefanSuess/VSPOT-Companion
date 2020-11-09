@@ -12,6 +12,11 @@
 <p>VSPOT is a graduation project (State-Certified Engineer CS).</p>
 </div>
 
+|The Device Finder|The Configuration Screen|
+|-----------------|------------------------|
+|<img src="https://raw.githubusercontent.com/StefanSuess/VSPOT-Companion/master/blob/device_finder.png">|<img src="https://raw.githubusercontent.com/StefanSuess/VSPOT-Companion/master/blob/device_configuration_screen.png">
+
+
 ## Author
 
 * **Stefan Süß** – [Profile on GitHub](https://github.com/StefanSuess)
