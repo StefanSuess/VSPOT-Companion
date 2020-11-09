@@ -10,12 +10,12 @@
 </p>
 <p>This app helps you to find, configure and troubleshoot your physical VSPOT device.</p>
 <p>VSPOT is a graduation project (State-Certified Engineer CS).</p>
-</div>
+
 
 |The Device Finder|The Configuration Screen|
 |-----------------|------------------------|
 |<img src="https://raw.githubusercontent.com/StefanSuess/VSPOT-Companion/master/blob/device_finder.png">|<img src="https://raw.githubusercontent.com/StefanSuess/VSPOT-Companion/master/blob/device_configuration_screen.png">
-
+</div>
 
 ## Author
 
